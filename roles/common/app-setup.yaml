@@ -11,22 +11,23 @@
   file:
       path: /app
       state: absent
-- name: delete {{ compoent }}.zip
+- name: "delete {{ compoent }}.zip"
   file:
-    path: /tmp/{{ compoent }}.zip
+    path: "/tmp/{{ compoent }}.zip"
     state: absent
        
 - name: create app directory
   file:
     path: /app
     state: directory  
-- name: download {{ compoent }}
+- name: "download {{ compoent }}"
   get_url:
-    url: https://roboshop-artifacts.s3.amazonaws.com/{{ compoent }}-v3.zip
-    dest: /tmp/{{ compoent }}.zip
-- name: unzip {{ compoent }} 
+    url: "https://roboshop-artifacts.s3.amazonaws.com/{{ compoent }}-v3.zip"
+    dest: "/tmp/{{ compoent }}.zip"
+
+- name: "unzip {{ compoent }}"
   unarchive:
-    src: /tmp/{{ compoent }}.zip
+    src: "/tmp/{{ compoent }}.zip"
     dest: /app
     remote_src: yes
 
