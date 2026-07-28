@@ -1,1 +1,4 @@
-- name: 
+- name: demo on common role
+  hosts: catalogue
+  roles:
+  - demo
