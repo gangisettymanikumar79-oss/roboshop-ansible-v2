@@ -11,5 +11,6 @@
     
 - name: setup root password
   command: mysql_secure_installation --set-root-pass "{{ Mysql_Root_password }}"
+  
     
    
