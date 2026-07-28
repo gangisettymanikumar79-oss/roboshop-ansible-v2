@@ -1,9 +1,9 @@
 - name: application setup
   import_role:
-  name: common
-  tasks_from: app_setup
+    name: common
+    tasks_from: app_setup
 
-- name: nodejs setup
+  - name: nodejs setup
   import_role:
     name: common
     tasks_from: nodejs
