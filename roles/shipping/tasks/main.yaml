@@ -16,8 +16,9 @@
 
 - name: install mysql
   package:
-    name: PyMySQL
-    executable: pip3.9
+    name: mysql
+    state: present
+    
 
 - name: install python dependencies
   pip:
@@ -42,7 +43,7 @@
   import_role:
     name: common
     tasks_from: restart
-    
+
 
   
 
