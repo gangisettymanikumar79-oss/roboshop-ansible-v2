@@ -8,4 +8,3 @@
       name: "{{ component }}"
       daemon_reload: true
       
-    
