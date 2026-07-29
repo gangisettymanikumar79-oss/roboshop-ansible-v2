@@ -1,6 +1,6 @@
 - name: create roboShop system user
   user:
-    name: roboShop
+    name: roboshop
     system: true
     home: /app
     shell: /sbin/nologin
