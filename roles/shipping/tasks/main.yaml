@@ -31,7 +31,7 @@
       name: all
       login_user: "{{ mysql_login_user }}"
       login_password:  "{{ mysql_root_password }}"
-      login_host: mysql.manikumar.online
+      login_host: "{{ MYSQL_HOST }}"
       target: "{{ item }}"
   loop:
     - /app/db/schema.sql
