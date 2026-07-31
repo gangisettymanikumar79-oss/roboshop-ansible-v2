@@ -1,0 +1,18 @@
+ansible_user: ec2-user
+ansible_password: DevOps321
+MONGODB_HOST: mongodb.manikumar.online
+REDIS_HOST  : redis.manikumar.online
+MYSQL_HOST: mysql.manikumar.online
+CATALOGUE_HOST: catalogue.manikumar.online 
+RABBITMQ_HOST: rabbitmq.manikumar.online
+USER_HOST: user.manikumar.online
+CART_HOST: cart.manikumar.online
+SHIPPING__HOST:  shipping.manikumar.online
+PAYMENT_HOST: payment.manikumar.online
+
+
+
+
+
+
+
